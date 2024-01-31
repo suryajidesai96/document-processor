@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentProcessingService", "DocumentProcessingService\DocumentProcessingService.csproj", "{3FF6F083-67B0-4B17-85C5-DA1AFFF7F861}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentProcessor", "DocumentProcessor\DocumentProcessor.csproj", "{515A6DDE-C424-4B5D-BB32-76CF954896BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentProcessingConsole", "DocumentProcessingConsole\DocumentProcessingConsole.csproj", "{534C6366-064B-42BC-996E-5B5F24053721}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NuGet", ".NuGet", "{EBB1D0EC-FCD1-4E80-B1B2-2AE01BFEFA97}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet.Config = NuGet.Config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Package", "Package", "{8BEA1115-56C9-4E60-B902-AC8D0F82C276}"
+	ProjectSection(SolutionItems) = preProject
+		Package\Package.ps1 = Package\Package.ps1
+		Package\package.settings.ps1 = Package\package.settings.ps1
+		Package\version.txt = Package\version.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{3A86E049-5AEB-4CB2-847F-8E1F8606F448}"
+	ProjectSection(SolutionItems) = preProject
+		Deploy\Deploy.ps1 = Deploy\Deploy.ps1
+		Deploy\deploy.settings.ps1 = Deploy\deploy.settings.ps1
+		Deploy\DeployRemote.ps1 = Deploy\DeployRemote.ps1
+		Deploy\Deploy_Live_Azure.cmd = Deploy\Deploy_Live_Azure.cmd
+		Deploy\Deploy_UAT.cmd = Deploy\Deploy_UAT.cmd
+		Deploy\live.azure.setParameters.xml = Deploy\live.azure.setParameters.xml
+		Deploy\nhspdemo.setParameters.xml = Deploy\nhspdemo.setParameters.xml
+		Deploy\nhsptest.setParameters.xml = Deploy\nhsptest.setParameters.xml
+		Deploy\Set-DCOMAccess.psm1 = Deploy\Set-DCOMAccess.psm1
+		Deploy\uat.setParameters.xml = Deploy\uat.setParameters.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FF6F083-67B0-4B17-85C5-DA1AFFF7F861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF6F083-67B0-4B17-85C5-DA1AFFF7F861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF6F083-67B0-4B17-85C5-DA1AFFF7F861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF6F083-67B0-4B17-85C5-DA1AFFF7F861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515A6DDE-C424-4B5D-BB32-76CF954896BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515A6DDE-C424-4B5D-BB32-76CF954896BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515A6DDE-C424-4B5D-BB32-76CF954896BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515A6DDE-C424-4B5D-BB32-76CF954896BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{534C6366-064B-42BC-996E-5B5F24053721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{534C6366-064B-42BC-996E-5B5F24053721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{534C6366-064B-42BC-996E-5B5F24053721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{534C6366-064B-42BC-996E-5B5F24053721}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C0388C2-FB9B-48B0-A892-4AD6E65D260F}
+	EndGlobalSection
+EndGlobal

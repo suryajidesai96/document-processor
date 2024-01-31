@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<parameters>
+
+  <parameter name="ConnectionString" description="Please provide the name connectionstring to use." defaultValue="Plus" tags="">
+    <parameterEntry kind="XmlFile" scope="\w*\.exe\.config$" match="/configuration/connectionStrings/add[@name='Plus']/@connectionString" />
+  </parameter>
+
+  <parameter name="ConnectionStringName" description="" defaultValue="Plus" tags="">
+    <parameterEntry kind="XmlFile" scope="\w*\.exe\.config$" match="/configuration/appSettings/add[@key='ConnectionStringName']/@value" />
+    <parameterEntry kind="XmlFile" scope="\w*\.exe\.config$" match="/configuration/connectionStrings/add[@name='Plus']/@name" />
+  </parameter>
+
+  <parameter name="EntityId" description="" defaultValue="ffffffff-0000-0000-0003-000000000000" tags="">
+    <parameterEntry kind="XmlFile" scope="\w*\.exe\.config$" match="/configuration/appSettings/add[@key='EntityId']/@value" />
+  </parameter>
+
+  <parameter name="TempDirectory" description="Temporary storage path for template output." defaultValue="C:\temp\documentprocessor" tags="">
+    <parameterEntry kind="XmlFile" scope="\w*\.exe\.config$" match="/configuration/appSettings/add[@key='TempDirectory']/@value" />
+  </parameter>
+
+  <parameter name="TestDocuments" description="" defaultValue="F:\documentprocessing\test\test.doc" tags="">
+    <parameterEntry kind="XmlFile" scope="\w*\.exe\.config$" match="/configuration/appSettings/add[@key='TestDocuments']/@value" />
+  </parameter>
+
+  <parameter name="GemboxPdfLicence" description="Licence key for Gembox PDF." defaultValue="" tags="">
+    <parameterEntry kind="XmlFile" scope="\w*\.exe\.config$" match="/configuration/appSettings/add[@key='GemboxPdfLicence']/@value" />
+  </parameter>
+
+  <parameter name="GemboxDocumentLicence" description="Licence key for Gembox Document." defaultValue="" tags="">
+    <parameterEntry kind="XmlFile" scope="\w*\.exe\.config$" match="/configuration/appSettings/add[@key='GemboxDocumentLicence']/@value" />
+  </parameter>
+
+  <parameter name="TestMode" description="Whether the service is in test mode or not." defaultValue="false" tags="">
+    <parameterEntry kind="XmlFile" scope="\w*\.exe\.config$" match="/configuration/appSettings/add[@key='TestMode']/@value" />
+  </parameter>
+
+  <parameter name="TestRequest" description="Request information to use when in test mode." defaultValue="action=convert;format=pdf,png" tags="">
+    <parameterEntry kind="XmlFile" scope="\w*\.exe\.config$" match="/configuration/appSettings/add[@key='TestRequest']/@value" />
+  </parameter>
+  
+  <parameter name="ProcessStartTime" description="Time from which operation of the this service begins." defaultValue="00:01" tags="">
+    <parameterEntry kind="XmlFile" scope="\w*\.exe\.config$" match="/configuration/appSettings/add[@key='ProcessStartTime']/@value" />
+  </parameter>
+
+  <parameter name="ProcessEndTime" description="Time from which operation of this service ends." defaultValue="23:59" tags="">
+    <parameterEntry kind="XmlFile" scope="\w*\.exe\.config$" match="/configuration/appSettings/add[@key='ProcessEndTime']/@value" />
+  </parameter>
+  
+  <parameter name="WorklistEvenFilter" description="" defaultValue="all" tags="">
+    <parameterEntry kind="XmlFile" scope="\w*\.exe\.config$" match="/configuration/appSettings/add[@key='WorklistEvenFilter']/@value" />
+  </parameter>
+
+</parameters>

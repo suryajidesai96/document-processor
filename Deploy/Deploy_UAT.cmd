@@ -1,0 +1,1 @@
+powershell .\DeployRemote.ps1 -target uat

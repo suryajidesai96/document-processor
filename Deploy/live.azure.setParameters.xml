@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+
+  <setParameter name="ConnectionStringName" value="Live" />
+  <setParameter name="EntityId" value="ffffffff-0000-0000-0003-000000000000"/>
+  <setParameter name="TempDirectory" value="C:\temp\documentprocessor"/>
+  <setParameter name="TestDocuments" value="C:\test\documentprocessor\test.docx" />
+  <setParameter name="TestMode" value="false"/>
+  <setParameter name="TestRequest" value="action=convert;format=pdf,png"/>
+  <setParameter name="ProcessStartTime" value="00:10"/>
+  <setParameter name="ProcessEndTime" value="23:50"/>
+  <setParameter name="WorklistEvenFilter" value="all"/>
+  <setParameter name="ConnectionString" value="datasource=holt-live-db;username=plusdp;password=88013i64zB7U;database=plus" />
+  <setParameter name="GemboxPdfLicence" value="AN-2021Apr23-6tglJFMVtqFIT94sIX4DlW4JvY/WkTPTiD4rjyliqZFkN7zzNivjEM8h8Nblx4cKiJFrDHDCEYS86pN4Olxsrj7IS3A==A"/>
+  <setParameter name="GemboxDocumentLicence" value="DN-2021Apr23-yh04Sn0AEkuVTCHnRKJ3HfXYw1tQCiszgRDLk74bPr1n5G9jz7TfLgO9VU2v2R98szzFxYobxwBFknB7iJWYPFhMswg==A"/>
+  
+</parameters>
